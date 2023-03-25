@@ -52,7 +52,7 @@ padding-top: 32px;}
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color);
-margin-right: 76px;}
+    margin-right: 76px;}
 .header-navigation {display: flex;
 align-items: center;
 margin-right: auto;} 
@@ -76,6 +76,10 @@ padding-bottom: 24px;}
 .header-link:hover {color: var(--color-hoover);}
 .header-contact:focus {color: var(--color-hoover)}
 .header-link:focus {color: var(--color-hoover);}
+.footer {background: var(--brand-color);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;}
 .footer-logo {font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -90,10 +94,10 @@ padding-bottom: 24px;}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-logo2);
-    background: var(--brand-color);}
-.footer {background: var(--brand-color);
-    padding-top: 100px;
-    padding-bottom: 100px;}
+    background: var(--brand-color);
+    width: 264px;
+    padding-top: 16px;}
+.footer-logo {margin-bottom: 16px;} 
 .footer-logo-web {font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
@@ -142,25 +146,35 @@ padding-bottom: 48px;}
     margin: 0 auto;
     align-items: center;
     letter-spacing: 0.04em;
-    color: var(--color-light);}
-.about {padding-top: 120px;
+    color: var(--color-light);} 
+.about {display: flex;
+    flex-wrap: wrap;
+    padding-top: 120px;
     padding-bottom: 120px;}
+.about-list {display: flex;
+    gap: 24px;}
 .about-item {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--brand-color);}
-.item-text {font-size: 16px;
+    color: var(--brand-color);
+    margin-bottom: 8px;}
+.about-item-text {font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--color-text);}
+    color: var(--color-text);
+    display: flex;
+    gap: 24px;}
+.about-list-item {flex-basis: calc((100%-24px)/4)}
 .gallary {padding-top: 120px;
     padding-bottom: 120px;}
 .photo-container {display: flex;
+    flex-wrap: wrap;
     gap: 24px;
-padding-top: 72px;
-padding-bottom: 120px;}
+    padding-top: 72px;
+    padding-bottom: 120px;}
+.photo {flex-basis: calc((100% - 48px) / 3);}
 .gallary-text {font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -176,24 +190,36 @@ padding-bottom: 120px;}
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--brand-color);
-padding-bottom: 72px;}
+    padding-bottom: 72px;}
 .team-list {background-color: var(--color-light);
-display: flex;
-gap: 24px;}
-.team-item {background-color: var(--color-light);}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;}
+.team-item {flex-basis: calc((100% - 72px) / 4);
+    background-color: var(--color-light);}
+.team-list-item {padding-top: 32px;
+    border: 1px solid #E7E9FC;
+    border-top: none;}
 .name {font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--brand-color);}
+    color: var(--brand-color);
+    margin-bottom: 8px;}
 .item-text {font-size: 16px;
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--color-text);}
+    color: var(--color-text);
+    padding-bottom: 32px;}
 .filter {padding-top: 96px;
     padding-bottom: 120px;}
+.filter-list {display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 72px;}
+.filter-item {display: flex;}
 .button-filter {background: var(--color-logo2);
     border: 1px solid #E7E9FC;
     border-radius: 4px;
@@ -205,17 +231,18 @@ gap: 24px;}
     align-items: center;
     text-align: center;
     letter-spacing: 0.04em;
-    color: var(--color-logo1);}
+    color: var(--color-logo1);
+    padding: 12px 24px;}
 .button-filter:hover {background-color: var(--color-hoover);
     color: var(--color-light);}
 .button-filter:focus {background-color: var(--color-hoover);
     color: var(--color-light);}
 .button-filter {cursor: pointer}
 .work {display: flex;
-flex-wrap: wrap;
-gap: 24px;
-margin-bottom: 48px;}
-/* .work-list {flex-basis: calc((100%-2*24)/3);} */
+    flex-wrap: wrap;
+    gap: 24px;}
+.work-list {flex-basis: calc((100% - 48px) / 3);
+    margin-bottom: 48px;}
 .name-item {padding-top: 32px;
     border: 1px solid #E7E9FC;
     border-top: none;}
